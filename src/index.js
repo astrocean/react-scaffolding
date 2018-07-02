@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 import './index.css';
-import App from './App';
+import routes from './routes';
 import * as serviceWorker from './serviceWorker';
 const render=(Component)=>{
   ReactDOM.render(
@@ -12,12 +12,12 @@ const render=(Component)=>{
     document.getElementById('root')
   );
 }
-render(App);
+render(routes);
 
 if(module.hot){
-  module.hot.accept('./App',()=>{
-    const App=require('./App').default;
-    render(App);
+  module.hot.accept('./routes',()=>{
+    const newRoute=require('./routes').default;
+    render(newRoute);
   });
 }
 // If you want your app to work offline and load faster, you can change
