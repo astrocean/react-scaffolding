@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.9.0",
     "react": "^16.4.1",
     "react-app-rewire-hot-loader": "^1.0.1",
     "react-app-rewire-polyfills": "^0.2.0",

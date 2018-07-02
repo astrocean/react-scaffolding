@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import'./App.css';
 import styles from './Base.module.css';
+import sassStyles from './Sass.module.scss';
 
 class App extends Component {
   render() {
@@ -14,7 +15,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p className={styles.color_red}>
+          <p className={`${styles.color_red} ${sassStyles.bg_color_yellow}`}>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
