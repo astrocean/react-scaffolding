@@ -5,6 +5,11 @@ import styles from './Base.module.css';
 
 class App extends Component {
   render() {
+    var log=()=>{
+      console.log('test arrow function');
+    }
+    log();
+    
     return (
       <div className="App">
         <header className="App-header">

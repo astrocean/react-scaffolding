@@ -1878,6 +1878,14 @@ babel-plugin-transform-react-remove-prop-types@0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.13.tgz#331cfc05099a808238311d78319c27460d481189"
 
+babel-polyfill@^6.20.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
+  dependencies:
+    babel-runtime "^6.26.0"
+    core-js "^2.5.0"
+    regenerator-runtime "^0.10.5"
+
 babel-preset-jest@^22.4.3, babel-preset-jest@^22.4.4:
   version "22.4.4"
   resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-22.4.4.tgz#ec9fbd8bcd7dfd24b8b5320e0e688013235b7c39"
@@ -7153,6 +7161,12 @@ react-app-rewire-hot-loader@^1.0.1:
   dependencies:
     webpack "^3.6.0"
 
+react-app-rewire-polyfills@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-app-rewire-polyfills/-/react-app-rewire-polyfills-0.2.0.tgz#18c9a7f4849d5c0dbaece355cf18c1a3c2551fd4"
+  dependencies:
+    babel-polyfill "^6.20.0"
+
 react-app-rewired@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-1.5.2.tgz#0f5cdbc92f47f166bb0bcadf8a5d00999b90f68f"
@@ -7383,6 +7397,10 @@ regenerate-unicode-properties@^7.0.0:
 regenerate@^1.2.1, regenerate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
+
+regenerator-runtime@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
