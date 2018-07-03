@@ -1,0 +1,81 @@
+/*
+*样式重置
+*/
+@mixin meyer-reset {
+  // unify the setting of elements's margin and padding for browsers
+  body,div,
+  dl,dt,dd,ul,ol,li,
+  h1,h2,h3,h4,h5,h6,
+  pre,code,form,fieldset,legend,
+  input,textarea,
+  p,blockquote,
+  th,td,hr,
+  button,
+  article,aside,details,figcaption,figure,
+  footer,header,hgroup,menu,nav,section{
+    margin  : 0;
+    padding : 0;
+  }
+  
+
+  // HTML5 display-role reset for older browsers
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display : block;
+  }
+  body {
+    line-height : 1.5;
+  }
+  ol, ul {
+    list-style : none;
+  }
+  blockquote, q {
+    quotes : none;
+  }
+  blockquote {
+    &:before, &:after {
+      content : "";
+      content : none;
+    }
+  }
+  q {
+    &:before, &:after {
+      content : "";
+      content : none;
+    }
+  }
+  table {
+    border-collapse : collapse;
+    border-spacing  : 0;
+  }
+
+  iframe {
+    border : 0;
+  }
+  /**
+  * Remove the border on images inside links in IE 10.
+  */
+  img {
+    border-style: none;
+  }
+
+  .clearfix:after {
+    content    : ".";
+    display    : block;
+    height     : 0;
+    clear      : both;
+    visibility : hidden;
+  }
+  /**
+  *
+  *IE 10
+  */
+  [hidden] { 
+    display: none; 
+  }
+  /* Hides from IE-mac \*/
+  html .clearfix { *height : 1%; }
+  .clearfix { *display : block; }
+  /* End hide from IE-mac */
+}
+
+@include meyer-reset;
