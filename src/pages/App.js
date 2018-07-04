@@ -53,6 +53,16 @@ class App extends Component {
           >
             show Masonry
           </button>
+          <button
+           style={{
+            padding:'20px'
+          }}
+            onClick={()=>{
+              this.props.history.push('/ColList');
+            }}
+          >
+            show ColList
+          </button>
           <div
             style={{
               color:'white'
