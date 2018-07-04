@@ -63,6 +63,16 @@ class App extends Component {
           >
             show ColList
           </button>
+          <button
+           style={{
+            padding:'20px'
+          }}
+            onClick={()=>{
+              this.props.history.push('/InfoList');
+            }}
+          >
+            show InfoList
+          </button>
           <div
             style={{
               color:'white'
