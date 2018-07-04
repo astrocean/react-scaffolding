@@ -3,8 +3,12 @@ import logo from './logo.svg';
 import'./App.css';
 import styles from './Base.module.css';
 import sassStyles from './Sass.module.scss';
+import Utils from '../utils';
 
 class App extends Component {
+  componentDidMount(){
+    Utils.Toast.show('render');
+  }
   render() {
     var log=()=>{
       console.log('test arrow function');
@@ -26,6 +30,28 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button
+           style={{
+            padding:'20px'
+          }}
+            onClick={()=>{
+              Utils.Popover.show(<div style={{
+                color:'white'
+              }}>popover</div>);
+            }}
+          >
+            show popover
+          </button>
+          <div
+            style={{
+              color:'white'
+            }}
+          >
+          日期是否存在safri兼容性问题？
+            {
+              Utils.Base.formatDate(new Date())
+            }
+          </div>
         </header>
       </div>
     );
