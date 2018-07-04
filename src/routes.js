@@ -6,6 +6,7 @@ import {Router,Switch,Route,Redirect} from 'react-router';
 
 import App from './pages/App';
 import NotFound from './pages/NotFound';
+import Masonry from './pages/Masonry';
 
 const hashHistory=createHashHistory();
 const routerStore=new RouterStore();
@@ -22,6 +23,7 @@ const routes=()=>{
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={App}/>
+          <Route  path="/Masonry" component={Masonry}/>
           <Route path="/404" component={NotFound}/>
           <Redirect from="*" to="/404"/>
         </Switch>

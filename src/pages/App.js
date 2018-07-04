@@ -8,6 +8,7 @@ import Utils from '../utils';
 class App extends Component {
   componentDidMount(){
     Utils.Toast.show('render');
+    console.log(this.props);
   }
   render() {
     var log=()=>{
@@ -41,6 +42,16 @@ class App extends Component {
             }}
           >
             show popover
+          </button>
+          <button
+           style={{
+            padding:'20px'
+          }}
+            onClick={()=>{
+              this.props.history.push('/Masonry');
+            }}
+          >
+            show Masonry
           </button>
           <div
             style={{
