@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound';
 import Masonry from './pages/Masonry';
 import ColList from './pages/ColList';
 import InfoList from './pages/InfoList';
+import Swiper from './pages/Swiper';
 
 const hashHistory=createHashHistory();
 const routerStore=new RouterStore();
@@ -28,6 +29,7 @@ const routes=()=>{
           <Route  path="/Masonry" component={Masonry}/>
           <Route  path="/ColList" component={ColList}/>
           <Route  path="/InfoList" component={InfoList}/>
+          <Route  path="/Swiper" component={Swiper}/>
           <Route path="/404" component={NotFound}/>
           <Redirect from="*" to="/404"/>
         </Switch>

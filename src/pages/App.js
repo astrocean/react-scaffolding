@@ -73,6 +73,16 @@ class App extends Component {
           >
             show InfoList
           </button>
+          <button
+           style={{
+            padding:'20px'
+          }}
+            onClick={()=>{
+              this.props.history.push('/Swiper');
+            }}
+          >
+            show Swiper
+          </button>
           <div
             style={{
               color:'white'
