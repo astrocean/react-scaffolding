@@ -4,11 +4,22 @@ import'./App.css';
 import styles from './Base.module.css';
 import sassStyles from './Sass.module.scss';
 import Utils from '../utils';
+Object.setPrototypeOf = require('setprototypeof')
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    
+    console.log('test props',this.props);
+    this.bindTest=this.bindTest.bind(this);
+  }
   componentDidMount(){
     Utils.Toast.show('render');
+    this.bindTest();
     console.log(this.props);
+  }
+  bindTest(){
+    console.log('bindTest');
   }
   render() {
     var log=()=>{
