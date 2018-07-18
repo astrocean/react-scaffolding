@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "helpers": false,
+      "polyfill": true,
+      "regenerator": true
+    }]
+  ],
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/preset-env",{
+      "targets":{
+        "browsers": ["> 0.25%", "ie >= 9"]
+      },
+      "modules":false,
+      "useBuiltIns":"entry"
+    }],
+    "@babel/preset-stage-0"
+  ]
+}
